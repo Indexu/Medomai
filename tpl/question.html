@@ -1,0 +1,35 @@
+<div class="row">
+	<div class="large-12 columns">
+		<div class="indentBox ">
+
+			<div class="row questionHeader">
+				<div class="large-2 columns timerContainer">
+					<h3 class="infoText">Time</h3>
+					<h3 class="infoText timer">ERROR</h3>
+				</div>
+
+				<div class="large-8 columns">
+					<h3 class="infoText">{{progress}}</h3>
+					{{#if image}}
+						<img class="questionImage" src="{{image}}">
+					{{/if}}
+					<h3 class="question">{{question}}</h3>
+				</div>
+
+				<div class="large-2 columns pointsContainer">
+					<h3 class="infoText">Points</h3>
+					<h3 class="infoText points">ERROR</h3>
+				</div>
+			</div>
+
+			<div class="row choices">
+			{{#each choices}}
+				<div class="large-6 columns">
+					<button class="expand choice">{{this}}</button>
+				</div>
+			{{/each}}
+			</div>
+
+		</div>
+	</div>		
+</div>

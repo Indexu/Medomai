@@ -1,0 +1,21 @@
+<div class="indentBox">
+<table class="leaderboards">
+   <caption>{{category}}</caption>
+   <thead>
+      <tr>
+         <th>Name</th>
+         <th>Points</th>
+         <th>Date</th>
+      </tr>
+   </thead>
+   <tbody>
+   {{#each leaderboard}}
+      <tr>
+         <td>{{name}}</td>
+         <td>{{points}}</td>
+         <td>{{date}}</td>
+      </tr>
+    {{/each}}
+   </tbody>
+</table>
+</div>

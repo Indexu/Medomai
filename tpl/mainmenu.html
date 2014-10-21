@@ -1,0 +1,19 @@
+{{#each categories}}
+	<div class="row">
+		<div class="large-12 columns">
+			<div class="indentBox">
+				<button class="expand mainMenuButton" data-category="{{data_name}}">{{title}}</button>
+				<div class="slideDownBox">
+					<div class="row">
+						<div class="large-6 columns">
+							<button class="expand playButton">Play!</button>
+						</div>
+						<div class="large-6 columns">
+							<button class="expand leaderboardsButton">Leaderboards</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{{/each}}
